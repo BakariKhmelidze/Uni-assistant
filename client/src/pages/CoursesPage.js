@@ -16,7 +16,7 @@ class CoursesPage extends React.Component {
     }
 
     fetchCourses() {
-        fetch('http://localhost:8000/api/courses')
+        fetch('api/courses')
         .then(res => res.json())
         .then(results => {
             this.setState({

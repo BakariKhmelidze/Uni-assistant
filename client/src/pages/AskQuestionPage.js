@@ -28,7 +28,7 @@ class AboutUsPage extends React.Component {
             })
         }
 
-        fetch('http://localhost:8000/api/posts', requestOptions)
+        fetch('api/posts', requestOptions)
         .then(res => res.json())
         .then(() => {
             alert("Success");

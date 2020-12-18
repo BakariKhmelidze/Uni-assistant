@@ -15,7 +15,7 @@ class AddCollegePage extends React.Component {
     }
 
     saveCollege = (event) => {
-        fetch("http://localhost:8000/api/schools", {
+        fetch("api/schools", {
             method: 'POST',
             credentials: 'include',
             headers: {

@@ -17,7 +17,7 @@ class Question extends React.Component {
     fetchUserData() {
         let id = this.props.userid;
 
-        fetch(`http://localhost:8000/api/users/${id}`)
+        fetch(`api/users/${id}`)
         .then(res => res.json())
         .then(results => {
             console.log(results)

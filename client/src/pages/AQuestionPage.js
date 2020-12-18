@@ -21,7 +21,7 @@ class AQuestionPage extends React.Component {
     }
     
     fetchComments(id) {
-        fetch(`http://localhost:8000/api/comments/post/${id}`)
+        fetch(`api/comments/post/${id}`)
         .then(res => res.json())
         .then(results => {
             this.setState({
@@ -31,7 +31,7 @@ class AQuestionPage extends React.Component {
     }
 
     fetchPost(id) {
-        fetch(`http://localhost:8000/api/posts/${id}`)
+        fetch(`api/posts/${id}`)
         .then(res => res.json())
         .then(results => {
             this.setState({
@@ -59,7 +59,7 @@ class AQuestionPage extends React.Component {
             })
         }
 
-        fetch(`http://localhost:8000/api/comments`, requestOptions)
+        fetch(`api/comments`, requestOptions)
         .then(res => res.json())
         .then(() => {
             alert("Successful");

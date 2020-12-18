@@ -14,7 +14,7 @@ const auth = {
       this.isAuthenticated = localStorage.getItem("isAuthenticated")
     },
     authenticate(email, password) {
-      return fetch('http://localhost:8000/api/auth/login', { 
+      return fetch('api/auth/login', { 
         method: 'POST',
         credentials: 'include',
         body: JSON.stringify({ email, password }),
@@ -38,7 +38,7 @@ const auth = {
         });
     },
     signout(cb) {
-      return fetch('http://localhost:8000/api/auth/logout', { 
+      return fetch('api/auth/logout', { 
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -58,7 +58,7 @@ const auth = {
         });
     },
     signup(email,username,password,first_name,last_name) {
-      return fetch('http://localhost:8000/api/auth/signup', { 
+      return fetch('api/auth/signup', { 
         method: 'POST',
         credentials: 'include',
         body: JSON.stringify({ email, username, password, first_name, last_name }),

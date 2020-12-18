@@ -22,7 +22,7 @@ class AddDepartmentPage extends React.Component {
     }
 
     saveDepartment = (event) => {
-        fetch("http://localhost:8000/api/departments", {
+        fetch("api/departments", {
             method: 'POST',
             credentials: 'include',
             headers: {

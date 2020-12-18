@@ -105,7 +105,7 @@ class AddCoursePage extends React.Component {
   }
 
   fetchDepartments() {
-    fetch('http://localhost:8000/api/departments')
+    fetch('api/departments')
     .then(res => res.json())
     .then(results => {
       console.log(results);
@@ -116,7 +116,7 @@ class AddCoursePage extends React.Component {
   }
 
   fetchSchools() {
-    fetch('http://localhost:8000/api/schools')
+    fetch('api/schools')
     .then(res => res.json())
     .then(results => {
       console.log(results);
@@ -140,7 +140,7 @@ class AddCoursePage extends React.Component {
       })
     }
 
-    let results = await fetch('http://localhost:8000/api/courses', requestOptions)
+    let results = await fetch('api/courses', requestOptions)
     .then(res => res.json())
     .then(results => {
 
@@ -163,7 +163,7 @@ class AddCoursePage extends React.Component {
       })
     }
 
-    fetch('http://localhost:8000/api/descriptions' , requestOptions)
+    fetch('api/descriptions' , requestOptions)
     .then(res => res.json())
     .then(results => {
       alert("Successful");

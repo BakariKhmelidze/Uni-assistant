@@ -39,7 +39,7 @@ class AddSchoolDepartment extends React.Component {
             })
         }
 
-        fetch('http://localhost:8000/api/departments', requestOptions)
+        fetch('api/departments', requestOptions)
         .then(res => res.json())
         .then(() => {
             alert("Success");
@@ -59,7 +59,7 @@ class AddSchoolDepartment extends React.Component {
             })
         }
 
-        fetch('http://localhost:8000/api/schools', requestOptions)
+        fetch('api/schools', requestOptions)
         .then(res => res.json())
         .then(() => {
             alert("Success");

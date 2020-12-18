@@ -14,7 +14,7 @@ class Course extends React.Component {
     }
 
     fetchSchoolByID(id) {
-        fetch(`http://localhost:8000/api/schools/${id}`)
+        fetch(`api/schools/${id}`)
         .then(res => res.json())
         .then(results => {
             this.setState({
@@ -24,7 +24,7 @@ class Course extends React.Component {
     }
 
     fetchDepartmentByID(id) {
-        fetch(`http://localhost:8000/api/departments/${id}`)
+        fetch(`api/departments/${id}`)
         .then(res => res.json())
         .then(results => {
             this.setState({
@@ -34,7 +34,7 @@ class Course extends React.Component {
     }
 
     fetchDescriptionByCourseID(id) {
-        fetch(`http://localhost:8000/api/descriptions/course/${id}`)
+        fetch(`api/descriptions/course/${id}`)
         .then(res => res.json())
         .then(results => {
             this.setState({

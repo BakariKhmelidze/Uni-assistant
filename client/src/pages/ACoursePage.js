@@ -21,7 +21,7 @@ class ACoursePage extends React.Component {
     }
 
     fetchCourseData(id) {
-        fetch(`http://localhost:8000/api/courses/${id}`)
+        fetch(`api/courses/${id}`)
         .then(res => res.json())
         .then(results => {
             console.log(results);
@@ -32,7 +32,7 @@ class ACoursePage extends React.Component {
     }
 
     fetchPostData(id) {
-        fetch(`http://localhost:8000/api/posts/course/${id}`)
+        fetch(`api/posts/course/${id}`)
         .then(res => res.json())
         .then(results => {
             console.log(results);
@@ -55,7 +55,7 @@ class ACoursePage extends React.Component {
             })
         }
 
-        fetch(`http://localhost:8000/api/posts`, requestOptions)
+        fetch(`api/posts`, requestOptions)
         .then(res => res.json())
         .then(() => {
             alert("Successful");
