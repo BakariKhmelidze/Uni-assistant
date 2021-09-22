@@ -1,0 +1,24 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "Kovalski123",
+    "database": "uni-assistant",
+    "host": "127.0.0.1",
+    "port":"5433",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "Kovalski123",
+    "database": "uni-assistant",
+    "host": "127.0.0.1",
+    "port":"5433",
+    "dialect": "postgres"
+  },
+  "production": {
+    "use_env_variable": "database",
+    "dialect": "postgres"
+  }
+}
+  
+
