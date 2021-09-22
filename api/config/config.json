@@ -1,17 +1,17 @@
 {
   "development": {
-    "username": "postgres",
-    "password": "Kovalski123",
-    "database": "uni-assistant",
-    "host": "127.0.0.1",
+    "username": "uxlmxfrwokcmna",
+    "password": "0032123b7cfb997d94afdab68b4f006d7c9282c0189e554babf803dfb39bb26c",
+    "database": "d106gms4n1psoq",
+    "host": "ec2-3-222-127-167.compute-1.amazonaws.com",
     "port":"5433",
     "dialect": "postgres"
   },
   "test": {
-    "username": "postgres",
-    "password": "Kovalski123",
-    "database": "uni-assistant",
-    "host": "127.0.0.1",
+    "username": "uxlmxfrwokcmna",
+    "password": "0032123b7cfb997d94afdab68b4f006d7c9282c0189e554babf803dfb39bb26c",
+    "database": "d106gms4n1psoq",
+    "host": "ec2-3-222-127-167.compute-1.amazonaws.com",
     "port":"5433",
     "dialect": "postgres"
   },
